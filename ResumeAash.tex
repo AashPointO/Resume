@@ -13,9 +13,9 @@
 
 \newcommand{\header}[2]
 {
-	\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
-		#1 &
-		#2 \\
+	% @ is a column separator 
+	\begin{tabular*}{\linewidth}{l @{\extracolsep{\fill}} r}
+		#1 & #2 \\
 	\end{tabular*}
 }
 
@@ -24,6 +24,15 @@
 	\vspace{-1.2em}
 	\rule{\textwidth}{1.7pt}
 	\vspace{-1.7em}
+}
+
+\newcommand{\twocol}[2]
+{
+	\begin{center}
+		#1 & #2 \\
+	\end{tabular*}
+	\end{center}
+
 }
 
 \begin{document}
@@ -54,24 +63,24 @@
 \sectionbreak
 
 \begin{itemize}
-	%\parskip=0.1em
 
 \item[] 
-	\header {\textbf{University of California, Davis}}
+	\header 
+		{\textbf{University of California, Davis}}
 		{\textbf{Davis, CA}}
 \item[]
 	\header
 		{College of Engineering: \emph{B.S. Computer Engineering}}
-		{\emph{}}
+		{GPA: \emph{3.00}}
 	\header
 		{Expected graduation: \emph{June 2020}}	
 		{}
 \item[]
 	\header
-	{\emph{Relevant Courses:} Data Objects and Structures (C/C++), Object-Oriented Programming (Rust), \\ \hspace{7.25em} Programming/Problem Solving (C), Discrete Mathematics.} 
+		{\emph{Relevant Courses:} Data Objects and Structures (C/C++), Object-Oriented Programming (Rust), \\ \hspace{7.25em} Programming/Problem Solving (C), Discrete Mathematics, Digital Systems, Circuits.} 
 		{}
 	\header
-	{\emph{Self Taught:} \hspace{2.0em} Swift/IOS development, vimscript, and \LaTeX.}
+		{\emph{Self Taught:} \hspace{2.0em} Swift/IOS development, vimscript, and \LaTeX.}
 		{}
 	
 \end{itemize}
@@ -81,21 +90,19 @@
 \subsection*{Technical Skills}
 \sectionbreak
 
+\vspace{0.5em}
+
 \begin{itemize}
-	\item
-		\textbf{Coding Languages:}  \\
-		\hspace*{2.25em} Fluent: C/C++. \\
-		\hspace*{2.25em} Advanced: Rust, Java, Swift, BASH, MATLAB, \LaTeX. \\
-		\hspace*{2.25em} Beginner: HTML.
-		\vspace{-0.75em}
-	\item
-		\textbf{Technological softwares/libraries:} \\
-		\hspace*{2.25em} JSON, SpriteKit, Unix, XCode, Vim, Android Studio, Microsoft Office  
-		\vspace{-0.25em}
-		
+	\item[]
+		\begin{tabular*}{\linewidth}{l @{\hspace{2.75em}} l}
+			\textbf{Coding Languages:} & \textbf{Technological softwares/libraries:} \\
+			\hspace*{2.0em} Fluent: C/C++. & \hspace*{2.0em}SpriteKit, Unix, XCode, Vim, Android Studio,\\
+			\hspace*{2.0em} Advanced: Rust, Java, Swift, Bash, MATLAB. &  \hspace*{2.0em}Arduino IDE, Microsoft Office.  \\
+			\hspace*{2.0em} Beginner: HTML, \LaTeX.
+		\end{tabular*}		
 \end{itemize}
 
-\vspace{-1.75em}
+\vspace{-1.5em}
 
 \subsection*{Experience}
 \sectionbreak
@@ -106,8 +113,8 @@
 			{\textbf{Software Engineering Intern}} 
 			{\textbf{June 2018 - August 2018}}
 		\header
-		{\textbf{General Atomics}}
-		{\textbf{EMS - Software and Controls}} 
+			{\textbf{General Atomics}}
+			{\textbf{EMS - Software and Controls}} 
 		\item
 			I converted thousands of lines of code of the mathematical intensive operations of an aircraft landing simulation from MATLAB to C, enabling the simulation to run twice as fast. My conversion is now used in research and development of the actual aircraft landing system, which is installed in the world’s most expensive aircraft carriers.
 		\item
@@ -126,8 +133,8 @@
 			{\textbf{Research Assistant}} 
 			{\textbf{April 2018 - onwards }}
 		\header
-		{\textbf{Miller Lab}}
-		{\textbf{Auditory Neuroscience and Speech Recognition Lab}} 
+			{\textbf{Miller Lab}}
+			{\textbf{Auditory Neuroscience and Speech Recognition Lab}} 
 		\item
 			Wrote backend database in MATLAB to track participants in a behavioral study we were conducting.
 		\item
@@ -158,7 +165,7 @@
 		\item
 			Online leaderboard via a realtime database through Google's Firebase API, which parses through JSON data. 
 		\item
-			Published and reviewed on App Store, with over 50 downloads. 
+			Published and reviewed on App Store, with over 60 downloads. 
 \end{itemize}
 
 \hrule
@@ -171,7 +178,7 @@
 				}
 				{\textbf{Winter 2018}}
 		\item
-			Utilizes SpriteKit through Swift to create aesthetic objects fully equipped with custom animations and sounds.	
+			Utilizes SpriteKit API to create aesthetically pleasing objects, fully equipped with custom animations and sounds.	
 		\item
 			Published and reviewed on App Store. 
 \end{itemize}
