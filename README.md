@@ -1,2 +1,2 @@
-# Resume - Aashir Farooqi
+## Resume - Aashir Farooqi
 Compiled with pdfTeX!
