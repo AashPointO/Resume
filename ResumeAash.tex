@@ -15,12 +15,20 @@
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 
+\newcommand{\items}[2]
+{
+	% @ is a column separator 
+	\begin{tabular*}{\linewidth}{l @{\extracolsep{\fill}} r}
+		#1 & #2 \\
+	\end{tabular*}
+}
+
 
 \newcommand{\header}[2]
 {
 	% @ is a column separator 
 	\begin{tabular*}{\linewidth}{l @{\extracolsep{\fill}} r}
-		#1 & #2 \\
+		 #1 & #2 \\
 	\end{tabular*}
 }
 
@@ -33,10 +41,10 @@
 
 \newcommand{\twocol}[2]
 {
-	\begin{center}
-		#1 & #2 \\
+	\begin{tabular*}{\linewidth}{l @{\hspace{108.5pt}} l}
+		 #1 & #2 \\
 	\end{tabular*}
-	\end{center}
+	\vspace{-12.5pt}
 
 }
 
@@ -52,7 +60,7 @@
 \ \href{https://github.com/AashPointO}{\emph{\underline{\smash{https://github.com/AashPointO}}}}
 \\
 \end{center}
-\vspace{-1.5em}
+\vspace{-20.65pt}
 
 \subsection*{Objective}
 \sectionbreak
@@ -62,7 +70,7 @@
 
 \end{itemize}
 
-\vspace{-1.5em}
+\vspace{-17.65pt}
 
 \subsection*{Education}
 \sectionbreak
@@ -70,40 +78,44 @@
 \begin{itemize}
 
 \item[] 
-	\header 
+	\header
 		{\textbf{University of California, Davis}}
 		{\textbf{Davis, CA}}
 \item[]
-	\header
-		{College of Engineering: \emph{B.S. Computer Engineering}}
-		{GPA: \emph{3.00}}
-	\header
-		{Expected graduation: \emph{June 2020}}	
+	\vspace{-2.5pt}
+	\items
+		{ \emph{College of Engineering:} B.S. Computer Engineering}
+		{\emph{GPA:} 3.00}
+	\items
+		{\emph{Expected graduation:} \ \ \ \ June 2020}
 		{}
 \item[]
-	\header
-		{\emph{Relevant Courses:} Data Objects and Structures (C/C++), Object-Oriented Programming (Rust), \\ \hspace{7.25em} Programming/Problem Solving (C), Discrete Mathematics, Digital Systems, Circuits.} 
+	\items
+		{\emph{Relevant Courses:} Data Objects and Structures (C/C++), Object-Oriented Programming (Rust), \\ \hspace{74pt} Programming/Problem Solving (C), Discrete Mathematics, Digital Systems, Circuits.} 
 		{}
-	\header
-		{\emph{Self Taught:} \hspace{2.0em} Swift/IOS development, vimscript, and \LaTeX.}
+	\items
+		{\emph{Self-Taught:} \hspace{21pt} Swift/IOS development, vimscript, and \LaTeX.}
 		{}
 	
 \end{itemize}
 
-\vspace{-2.5em}
+\vspace{-27.65pt}
+
+
 
 \subsection*{Technical Skills}
 \sectionbreak
 
-\vspace{0.5em}
-
 \begin{itemize}
 	\item[]
-		\begin{tabular*}{\linewidth}{l @{\hspace{2.75em}} l}
-			\textbf{Programming/Markup Languages:} & \textbf{Technological softwares/libraries:} \\
-			\hspace*{2.0em} Fluent: C/C++. & \hspace*{2.0em}SpriteKit, Unix, XCode, Vim, Android Studio,\\
-			\hspace*{2.0em} Advanced: Rust, Java, Swift, Bash, MATLAB. &  \hspace*{2.0em}Arduino IDE, Microsoft Office.  \\
-			\hspace*{2.0em} Beginner: HTML, \LaTeX.
+		\twocol
+		{\textbf{Programming/Markup Languages:}}
+		{\textbf{Technological softwares/libraries:}}
+	\item[]
+		\begin{tabular*}{\linewidth}{l @{\hspace{75pt}} l}
+			 \emph{Fluent}: C/C++. & SpriteKit, Unix, XCode, Vim, Android Studio,\\
+			 \emph{Advanced}: Rust, Java, Swift, Bash, MATLAB. &  Arduino IDE, Microsoft Office.  \\
+			 \emph{Beginner}: HTML, \LaTeX.
 		\end{tabular*}		
 \end{itemize}
 
@@ -114,18 +126,18 @@
 
 \begin{itemize}
 	\item[]
-		\header
+		\items
 			{\textbf{Software Engineering Intern}} 
 			{\textbf{June 2018 - August 2018}}
-		\header
+		\items
 			{\textbf{General Atomics}}
 			{\textbf{EMS - Software and Controls}} 
 		\item
-			I converted thousands of lines of code of the mathematical intensive algorithms of an aircraft landing simulation from MATLAB to C, enabling the simulation to run over twice as fast. My conversion is now used in research and development of the actual aircraft landing system contracted for the world’s most expensive aircraft carriers.
+			I converted thousands of lines of code of the mathematical intensive algorithms of an aircraft landing simulation from MATLAB to C, enabling the simulation to run more than twice as fast as its original speed. My conversion is now used in research and development of the actual aircraft landing system contracted for the world’s most expensive aircraft carriers.
 		\item
 			Only intern in department of 20 to earn "Most Valuable Player" award for saving "hundreds of hours in simulation time and greatly reduce control system tuning efforts."
 		\item
-			I created and presented several PowerPoint Presentations detailing the general process of the aircraft landing system, which are now being used for teaching new employees.
+			I created and Presented several PowerPoint Presentations detailing the general process of the aircraft landing system, which are now being used for teaching new employees.
 
 
 \end{itemize}
@@ -134,10 +146,10 @@
 
 \begin{itemize}
 	\item[]
-		\header
+		\items
 			{\textbf{Research Assistant}} 
-			{\textbf{April 2018 - onwards}}
-		\header
+			{\textbf{April 2018 - Present}}
+		\items
 		{\textbf{Miller Lab} \ (\href{https://millerlab.faculty.ucdavis.edu}{\small \emph{\underline{\smash{millerlab.faculty.ucdavis.edu})}} } }
 			{\textbf{Auditory Neuroscience and Speech Recognition Lab}} 
 		\item
@@ -157,7 +169,7 @@
 
 \begin{itemize}
 	\item[]
-		\header 
+		\items 
 		{
 			\href{https://itunes.apple.com/us/app/round-bound/id1369632746?mt=8}{\emph{\underline{\smash{\textbf{Round 'a Bound}}}}} \ \ \ \footnotesize Swift
 		}
@@ -176,7 +188,7 @@
 
 \begin{itemize}
 	\item[]
-		\header
+		\items
 			{
 				\href{https://itunes.apple.com/us/app/tic-tac-emoji/id1346934986?mt=8}{\emph{\underline{\smash{\textbf{Tic-Tac Emoji}}}}} \ \ \ \footnotesize Swift
 				}
