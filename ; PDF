@@ -14,7 +14,6 @@
 \usepackage{tgpagella}
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
-\renewcommand{\baselinestretch}{1.025}
 
 \newcommand{\items}[2]
 {
@@ -63,6 +62,15 @@
 \end{center}
 \vspace{-20.65pt}
 
+\subsection*{Objective}
+\sectionbreak
+
+\begin{itemize}
+	\item[] Seeking out an internship or part-time position in a software engineering or computer hardware related field.
+
+\end{itemize}
+
+\vspace{-17.65pt}
 
 \subsection*{Education}
 \sectionbreak
@@ -80,7 +88,7 @@
 		{\emph{GPA:} 3.00}
 	\items
 		{\emph{Expected graduation:} \ \ \ \ June 2020}
-{\vspace{-0.6em}}
+		{}
 \item[]
 	\items
 		{\emph{Relevant Courses:} Data Objects and Structures (C/C++), Object-Oriented Programming (Rust), \\ \hspace{74pt} Programming/Problem Solving (C), Discrete Mathematics, Digital Systems, Circuits.} 
@@ -104,7 +112,7 @@
 		{\textbf{Programming/Markup Languages:}}
 		{\textbf{Technological softwares/libraries:}}
 	\item[]
-		\begin{tabular*}{\linewidth}{l @{\hspace{18pt}} l}
+		\begin{tabular*}{\linewidth}{l @{\hspace{20pt}} l}
 			 \emph{Fluent}: C/C++. & SpriteKit, Unix-Based OS's, XCode, \\
 			 \emph{Advanced}: HTML/CSS, Javascript, Swift, Bash, MATLAB. &  Vim, Android Studio, Arduino IDE,  \\
 			 \emph{Beginner}: Rust, Java, \LaTeX. & Microsoft Office, Chrome Console, GitHub.
@@ -154,7 +162,7 @@
 
 \vspace{-1.5em}
 
-\subsection*{Independent Projects (\emph{source code available on \emph{\href{https://github.com/aashpointo}{\emph{\underline{\smash{GitHub}}}}})}}
+\subsection*{Independent Projects (\emph{code available on \emph{\href{https://github.com/aashpointo}{\emph{\underline{\smash{GitHub}}}}})}}
 \sectionbreak
 
 	
@@ -163,19 +171,17 @@
 	\item[]
 		\items 
 		{
-			\textbf{IOS Apps: }
-			\href{https://itunes.apple.com/us/app/round-bound/id1369632746?mt=8}{\emph{\underline{\smash{Round 'a Bound}}}}, 
-			\href{https://itunes.apple.com/us/app/tic-tac-emoji/id1346934986?mt=8}{\emph{\underline{\smash{Tic-Tac Emoji}}}} \ \ \ \footnotesize \emph{Swift}
+			\href{https://itunes.apple.com/us/app/round-bound/id1369632746?mt=8}{\emph{\underline{\smash{\textbf{Round 'a Bound}}}}} \ \ \ \footnotesize Swift
 		}
-			{\textbf{Winter 2017 \& Spring 2018}}
+			{\textbf{Spring 2018}}
 		\item 
-			Mobile games utilizing the Spritekit API to detect physics collisions between nodes, and to exhibit independently made animations and sounds.
+			Utilizes Spritekit API in detecting physics collisions between different nodes, and exhibiting custom animations and sounds.
 		\item
-			Incorporates gradients and textures through self use of Photoshop.
+			Gradients and textures incorporated through self use of Photoshop.
 		\item
 			Online leaderboard via a realtime database through Google's Firebase API, which parses through JSON data. 
 		\item
-			Both are published and reviewed on the App Store, culminating in over 100 downloads and 2600 page views.
+			Published and reviewed on App Store, with over 60 downloads. 
 \end{itemize}
 
 \hrule
@@ -183,16 +189,14 @@
 \begin{itemize}
 	\item[]
 		\items
-			{	
-				\textbf{Websites: }
-				\href{https://aashpointo.github.io/KmapWebsite/}{\emph{\underline{\smash{aashpointo.github.io/KmapWebsite}}}} \ \ \ \footnotesize \emph{HTML/CSS \& Javascript}
+			{
+				\href{https://itunes.apple.com/us/app/tic-tac-emoji/id1346934986?mt=8}{\emph{\underline{\smash{\textbf{Tic-Tac Emoji}}}}} \ \ \ \footnotesize Swift
 				}
 				{\textbf{Winter 2018}}
 		\item
-			Given a set of of truth table inputs, my website outputs a \emph{Sum of Products} equation through an independently created algorithm with a time complexity of $O(n^{2}log(n))$.
-		\item 
-			Unlike other K-Map Generating websites, mine allows for multiple outputs, an algorithm which is scalable up to an arbitrary number of bits, and a dynamically sizing table through my incorporation of Javascript.
-
+			Utilizes SpriteKit API to create aesthetically pleasing objects, fully equipped with custom animations and sounds.	
+		\item
+			Published and reviewed on App Store, with over 2000 App Store page views. 
 \end{itemize}
 
 \end{document}
