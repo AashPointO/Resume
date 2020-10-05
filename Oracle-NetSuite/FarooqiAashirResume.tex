@@ -1,0 +1,213 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+	colorlinks = true,
+	urlcolor={black},
+}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+\renewcommand{\baselinestretch}{1.025}
+
+\subsectionfont{\fontsize{11}{15}\selectfont}
+
+
+\newcommand{\items}[2]
+{
+	% @ is a column separator 
+	\begin{tabular*}{\linewidth}{l @{\extracolsep{\fill}} r}
+		#1 & #2 \\
+	\end{tabular*}
+}
+
+
+\newcommand{\header}[2]
+{
+	% @ is a column separator 
+	\begin{tabular*}{\linewidth}{l @{\extracolsep{\fill}} r}
+		\hspace{-27pt} #1 & #2 \\
+	\end{tabular*}
+}
+
+\newcommand{\sectionbreak}
+{
+	\vspace{-1.2em}
+	\rule{\textwidth}{1.7pt}
+	\vspace{-1.7em}
+}
+
+\newcommand{\twocol}[2]
+{
+	\begin{tabular*}{\linewidth}{l @{\hspace{108.5pt}} l}
+		#1 & #2 \\
+	\end{tabular*}
+	\vspace{-15pt}
+
+}
+
+\begin{document}
+
+\begin{center}
+	{\LARGE \textbf{Aashir Farooqi}}
+
+	\vspace{0.5em}
+	\ (949)-226-9612 \textbar 
+	\ afarooqi@ucdavis.edu\textbar
+	\ \href{https://github.com/AashPointO}{\emph{\underline{\smash{https://github.com/AashPointO}}}}
+	\\
+\end{center}
+\vspace{-20pt}
+
+
+\subsection*{Education}
+\sectionbreak
+
+\begin{itemize}
+
+	\item[] 
+		\header
+		{\textbf{University of California, Davis}}
+		{\textbf{Fall 2016 - Summer 2020}}
+	\item[]
+		\vspace{-2.5pt}
+	\items
+		{\textbf{Major:} Computer Engineering, B.S}
+		{}
+	\items
+		{\textbf{GPA:} 3.4}
+		{}
+	\items
+		{\textbf{CS Coursework:} Algorithm Design \& Analysis, Networks, Operating Systems.}
+		{}
+	\items
+		{\textbf{EE Coursework:} Embedded Systems, Digital Systems, Circuits, Signal Processing.}
+		{}
+		{\vspace{-0.6em}}
+
+\end{itemize}
+
+\vspace{-24.65pt}
+
+\subsection*{Experience}
+\sectionbreak
+
+\begin{itemize}
+	\item[]
+		\header
+		{\textbf{Software Engineer - Research Assistant}} 
+		{\textbf{April 2018 - June 2020}}
+		\header
+		{\textbf{Miller Lab} \ (\href{https://millerlab.faculty.ucdavis.edu}{\small \emph{\underline{\smash{millerlab.faculty.ucdavis.edu})}}} }
+		{\textbf{Auditory Neuroscience \& Speech Recognition Lab}} 
+	\item
+		Implemented object-oriented programming/design principles alongside low-overhead data structures in an embedded system, in order to cross-references external audio inputs with an EEG acquisition system. My improvements brought the latency down from the previous iteration a factor of 10.
+	\item 
+		Taught myself networking principles, such as TCP/IP communication, to communicate with an external eye-tracking system for use in our behavioral studies. 
+
+\end{itemize}
+
+\hrule
+
+\begin{itemize}
+	\item[]
+		\header
+		{\textbf{Software Engineer - Intern}} 
+		{\textbf{June 2018 - August 2018}}
+		\header
+		{\textbf{General Atomics}}
+		{\textbf{EMS - Software and Controls}} 
+	\item
+		Leveraged algorithm design and object-oriented programming/design principles as I rewrote the computationally intensive portions of the codebase for an aircraft landing simulation from MATLAB to C++. Despite tight time constraints and minimal assistance, I earned the "MVP" award for saving "hundreds of hours in simulation time and greatly reducing control system tuning efforts".
+
+
+\end{itemize}
+
+\vspace{-1.5em}
+
+\subsection*{Projects}
+\sectionbreak
+
+
+\begin{itemize}
+	\item[]
+		\header
+		{
+			\textbf{Algorithm Design \& Analysis (Course Project): }
+		}
+		{\textbf{Summer 2020}}
+	\item 
+		Implemented, tested, and designed a number of different Algorithms in C++, utilizing well-known mathematical optimization methods such as dynamic programming and greedy algorithms. 
+
+\end{itemize}
+
+\hrule
+
+\begin{itemize}
+\item[]
+	\header
+	{
+		\textbf{Networking Simulations (Course Project): }
+	}
+	{\textbf{Spring 2020}}
+\item 
+	Simulated the behavior of a Wireless Local Area Network and a single server queue in C++ for the sake of modeling and analysis. 
+\end{itemize}
+
+\hrule
+
+\begin{itemize}
+	\item[]
+		\header
+		{
+			\textbf{Mobile Applications (Independent Projects): }
+			\href{https://appadvice.com/app/round-bound/1369632746}{\emph{\underline{\smash{Round 'a Bound}}}}, 
+			\href{https://appadvice.com/app/tic-tac-emoji/1346934986}{\emph{\underline{\smash{Tic-Tac Emoji}}}} \ \ \ \footnotesize  \emph{Swift}
+		}
+		{\textbf{Winter 2017 \& Spring 2018}}
+	\item 
+		Utilized the Spritekit API to detect physics collisions between nodes and to exhibit independently made animations and sounds.
+	\item
+		Incorporated an online leaderboard via a realtime database through Google's Firebase API.
+	\item
+		Apps originally published and reviewed on the App Store, culminating in over 250 downloads.
+\end{itemize}
+
+\hrule
+
+\begin{itemize}
+	\item[]
+		\header
+		{	
+			\textbf{Web Applications (Independent Projects): }
+			\href{https://aashpointo.github.io/KmapWebsite/}{\emph{\underline{\smash{aashpointo.github.io/KmapWebsite}}}} \ \ \ \footnotesize \emph{HTML/CSS \& JavaScript}
+		}
+		{\textbf{Winter 2018}}
+	\item
+		I taught myself how to create Web Applications using JavaScript in order to implement the Quine-McCluskey algorithm from a set of truth-table inputs.
+
+\end{itemize}
+
+\vspace{-1.5em}
+\subsection*{Technical Skills}
+\sectionbreak
+
+\begin{itemize}
+
+	\item
+		\textbf{Proficient:} C/C++, Java, MATLAB, Bash.
+	\item
+		\textbf{Familiar:} Python, Rust, Swift, R, \LaTeX.
+\end{itemize}
+
+
+
+\end{document}
+
