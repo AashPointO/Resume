@@ -52,7 +52,7 @@
 \newcommand{\twocol}[2]
 {
 	\begin{tabular*}{\linewidth}{l @{\hspace{108.5pt}} l}
-		 #1 & #2 \\
+		#1 & #2 \\
 	\end{tabular*}
 	\vspace{-15pt}
 
@@ -61,13 +61,13 @@
 \begin{document}
 
 \begin{center}
-{\LARGE \textbf{Aashir Farooqi}}
+	{\LARGE \textbf{Aashir Farooqi}}
 
-\vspace{0.5em}
-\ (949)-226-9612 \textbar 
-\ afarooqi@ucdavis.edu\textbar
-\ \href{https://github.com/AashPointO}{\emph{\underline{\smash{https://github.com/AashPointO}}}}
-\\
+	\vspace{0.5em}
+	\ (949)-226-9612 \textbar 
+	\ afarooqi@ucdavis.edu\textbar
+	\ \href{https://github.com/AashPointO}{\emph{\underline{\smash{https://github.com/AashPointO}}}}
+	\\
 \end{center}
 \vspace{-20pt}
 
@@ -77,12 +77,12 @@
 
 \begin{itemize}
 
-\item[] 
-	\header
+	\item[] 
+		\header
 		{\textbf{University of California, Davis}}
 		{\textbf{Fall 2016 - Summer 2020}}
-\item[]
-	\vspace{-2.5pt}
+	\item[]
+		\vspace{-2.5pt}
 	\items
 		{\textbf{Major:} Computer Engineering, B.S}
 		{}
@@ -95,8 +95,8 @@
 	\items
 		{\textbf{EE Coursework:} Embedded Systems, Digital Systems, Circuits, Signal Processing.}
 		{}
-{\vspace{-0.6em}}
-	
+		{\vspace{-0.6em}}
+
 \end{itemize}
 
 \vspace{-24.65pt}
@@ -107,21 +107,17 @@
 \begin{itemize}
 	\item[]
 		\header
-			{\textbf{Firmware \& Hardware Engineer - Research Assistant}} 
-			{\textbf{April 2018 - June 2020}}
+		{\textbf{Firmware \& Hardware Engineer - Research Assistant}} 
+		{\textbf{April 2018 - June 2020}}
 		\header
 		{\textbf{Miller Lab} \ (\href{https://millerlab.faculty.ucdavis.edu}{\small \emph{\underline{\smash{millerlab.faculty.ucdavis.edu})}}} }
-			{\textbf{Auditory Neuroscience \& Speech Recognition Lab}} 
-		\item
-			Independently brought up, prototyped, and developed a real-time embedded solution to cross-reference external audio inputs with an EEG acquisition system by writing embedded 
-			firmware code in C and designing/assembling a single-bit ADC circuit. Brought latency down from the previous iteration by a factor of 10. 
-			Wrote additional software scripts in Bash and MATLAB to measure both the latency and jitter of the device.
-		\item 
-			Configured, built, and ran a custom real time operating system (embedded linux distribution) and cross-toolchain using the Yocto Project, by understanding both the architectural design of the embedded system, alongside the computer architecture of the host system.
-		\item
-			Utilized the version control software of GIT in all software projects, and leveraged software/hardware debugging skills, such as GDB and typical lab bench equipment (oscilloscopes, logic analyzers, function generator).
-		\item 
-			Utilized networking protocols of TCP/IP communication in Linux to interface with an external peripheral for eye-tracking. Implemented for use in behavioral studies.
+		{\textbf{Auditory Neuroscience \& Speech Recognition Lab}} 
+	\item
+		Independently brought up, prototyped, and developed a real time solution to cross-reference external audio inputs with an EEG acquisition system by writing embedded firmware code in C and designing/bringing up a circuit for a single-bit ADC. Brought latency down from the previous iteration by a factor of 10. 
+	\item 
+		Configured, built, and ran a custom real time operating system (embedded Linux distribution) and cross-toolchain using the Yocto Project, which included the configuration for a bootloader, a target operating system, and other optimizations based on the architecture of the target embedded system.
+	\item 
+		Implemented an external eye-tracking peripheral using TCP/IP communication in MATLAB and Python, for use in behavioral studies.
 \end{itemize}
 
 \hrule
@@ -129,17 +125,17 @@
 \begin{itemize}
 	\item[]
 		\header
-			{\textbf{Software Engineer - Intern}} 
-			{\textbf{June 2018 - August 2018}}
+		{\textbf{Software Engineer - Intern}} 
+		{\textbf{June 2018 - August 2018}}
 		\header
-			{\textbf{General Atomics}}
-			{\textbf{EMS - Software and Controls}} 
-		\item
-			Leveraged object-oriented and algorithm design principles to convert the code base for an aircraft landing from MATLAB to C++,
-		      	bringing the runtime of the simulation down by a factor of 2. Despite tight time constraints and minimal assistance, I earned the "MVP" award for saving "hundreds of hours in simulation time and greatly reducing control system tuning efforts".
+		{\textbf{General Atomics}}
+		{\textbf{EMS - Software and Controls}} 
+	\item
+		Utilized algorithm design principles in an agile software development team environment, to convert the code base for an aircraft landing simulation from the scripting language of MATLAB to C++, bringing the runtime of the simulation down by a factor of 2. Despite tight time constraints and minimal assistance, I earned the "MVP" award for saving "hundreds of hours in simulation time and greatly reducing control system tuning efforts".
+	\item
+		Wrote unit-tests in C++ to verify the accuracy of the simulations, and leveraged object-oriented software design principles to ensure the maintainability of the code.
 
-		\item
-			Wrote an extensive number of unit-tests in C++ using a testing framework to ensure the veracity of the simulations.
+
 \end{itemize}
 
 \vspace{-1.5em}
@@ -153,13 +149,13 @@
 		\header
 		{
 			\textbf{Smart Dog Collar}
-			\emph{\smash{Relevant Course Project}} \ \ \ \footnotesize \emph{C \& Verilog}
+			\emph{\smash{Senior Design Project}} \ \ \ \footnotesize \emph{C \& Verilog}
 		}
-			{\textbf{Fall 2019 \& Winter 2020}}
-		\item 
-			Wrote C code in a real time embedded environment with peripheral interfacing, using SPI, I2C, and UART, to track ambient noise, and cycle between different power modes for the SoC and peripherals. 
-		\item 
-			Leveraged digital logic and circuit analysis techniques to design custom schematics and PCBs, alongside selecting suitable hardware components to fit onto the circuit boards.
+		{\textbf{Fall 2019 \& Winter 2020}}
+	\item 
+		Wrote embedded firmware code in C, with peripheral interfacing using SPI, I2C, I2S, and UART, to track ambient noise, and cycle between different power modes for the SoC and peripherals.
+	\item 
+		Brought up multiple iterations of PCBs, involving schematic design/review, component selection, circuit assembly, and hardware-level debugging through use of lab bench equipment (such as oscilloscopes, logic analyzers, and function generators).
 
 \end{itemize}
 
@@ -169,12 +165,14 @@
 	\item[]
 		\header
 		{
-			\textbf{Operating Systems}
-			\emph{\smash{Relevant Course Project}} \ \ \ \footnotesize \emph{C++}
+			\textbf{Operating Systems \& Algorithm Design}
+			\emph{\smash{Relevant Course Projects}} \ \ \ \footnotesize \emph{C++}
 		}
-			{\textbf{Spring 2020}}
-		\item 
-			Wrote C++ code to implement the functionality of a Linux based operating system, including the development and implementation of preemptive threading, alongside writing a Linux device driver for a FAT16 file system.
+		{\textbf{Spring 2020}}
+	\item 
+		Wrote C++ code to implement functionality of a Linux based Operating System right above the kernel space. Functionality included the implementation of preemptive threading, building a Linux device driver for a FAT16 file system, and writing a Linux shell.
+	\item 
+		Wrote Rust code to implement different sorting algorithms and datastructures.
 
 \end{itemize}
 \hrule
@@ -182,13 +180,13 @@
 	\item[]
 		\header
 		{
-			\textbf{Mobile Applications (IOS): }
+			\textbf{Mobile Application Development (IOS): }
 			\href{https://appadvice.com/app/round-bound/1369632746}{\emph{\underline{\smash{Round 'a Bound}}}}, 
 			\href{https://appadvice.com/app/tic-tac-emoji/1346934986}{\emph{\underline{\smash{Tic-Tac Emoji}}}} \ \ \ \footnotesize  \emph{Swift}
 		}
-			{\textbf{Winter 2017 \& Spring 2018}}
-		\item 
-			Successfully delivered the products through their full life cycle, by utilizing different APIs to detect physics collisions, exhibiting independently made animations and sound, and incorporating an online leaderboard via a real time database. While formerly published, the apps culminated in over 250 downloads.
+		{\textbf{Winter 2017 \& Spring 2018}}
+	\item 
+		Successfully delivered the products through their full life cycle, by utilizing different APIs to detect physics collisions, exhibiting independently made animations and sound, and incorporating an online leaderboard via a real time database. While formerly published, the apps culminated in over 250 downloads.
 \end{itemize}
 
 \hrule
@@ -196,16 +194,15 @@
 \begin{itemize}
 	\item[]
 		\header
-			{	
-				\textbf{Web Application: }
-				\href{https://aashpointo.github.io/KmapWebsite/}{\emph{\underline{\smash{aashpointo.github.io/KmapWebsite}}}} \ \ \ \footnotesize \emph{HTML/CSS \& JavaScript}
-				}
-				{\textbf{Winter 2018}}
-		\item
-			Designed a web application to implement the Quine-McCluskey algorithm in JavaScript, which computes the \emph{Sum of Products} and \emph{Product of Sums} from a set of truth-table inputs for 
-			use in digital logic circuits.
+		{	
+			\textbf{Web Development: }
+			\href{https://aashpointo.github.io/KmapWebsite/}{\emph{\underline{\smash{aashpointo.github.io/KmapWebsite}}}} \ \ \ \footnotesize \emph{HTML/CSS \& JavaScript}
+		}
+		{\textbf{Winter 2018}}
+	\item
+		Implemented the Quine-McCluskey algorithm in the scripting language of JavaScript to compute the \emph{Sum of Products} and \emph{Product of Sums} from a set of truth-table inputs, primarily for use in digital logic design.
 
 \end{itemize}
 
-\end{document}
+																																																																																																																																																																																																																																										\end{document}
 
