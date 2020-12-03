@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+
+\usepackage{luacode}
+\usepackage{fontspec}
+
+\usepackage[]{geometry}
+\geometry{verbose,tmargin=50pt,bmargin=90pt,lmargin=90pt,
+	rmargin=90pt}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue,
+}
+
+\begin{luacode*}
+	require("template_doc.lua")
+	p1, p2, p3 = generateBodyText()
+\end{luacode*}
+
+\setlength\tabcolsep{25pt}
+\setlength\parindent{0pt}
+
+\begin{document}
+
+% ---- Header BEGIN ----
+\begin{center}
+	\begingroup
+		\fontsize{30}{40}\selectfont Aashir Farooqi
+	\endgroup
+
+	\vspace{10pt}
+
+	\begin{tabular}{ c c c } 
+		(949)-226-9612 & 
+		afarooqi@ucdavis.edu & 
+		\href{https://www.linkedin.com/in/aashir-farooqi-4b067b139/}{\underline{LinkedIn Profile}}
+	\end{tabular}
+
+	\vspace{15pt}
+
+	\hrule
+
+	\vspace{8pt}
+
+\end{center}
+% ---- Header END ----
+
+
+% ---- Body BEGIN ----
+\begin{luacode*}
+	tex.print(p1)
+\end{luacode*}
+
+\vspace{15pt}
+
+\begin{luacode*}
+	tex.print(p2)
+\end{luacode*}
+
+\vspace{15pt}
+
+\begin{luacode*}
+	tex.print(p3)
+\end{luacode*}
+
+\vspace{15pt}
+
+% ---- Body END ----
+
+
+% ---- Footer BEGIN ----
+
+Thank you for your time,
+
+\vspace{15pt}
+
+Aashir Farooqi
+
+% ---- Footer END ----
+
+
+\end{document}
