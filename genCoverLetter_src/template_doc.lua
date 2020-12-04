@@ -1,6 +1,6 @@
-function getBodyPargs(role, profCompanyName, colloqCompanyName, companyGoal)
+function getBodyPargs(role, officialCompanyName, colloqCompanyName, companyGoal)
 
-	p1 = "I am writing to express my interest in " ..  role .. " role at " ..  profCompanyName .. ". I am a recently graduated Computer Engineering major from UC Davis, looking to strengthen my abilities in hardware and software design, as well as to contribute my passion and curiosity " .. companyGoal .. "."
+	p1 = "I am writing to express my interest in " ..  role .. " role at " ..  officialCompanyName .. ". I am a Computer Engineering graduate from UC Davis, looking to strengthen my abilities in hardware and software design, as well as to contribute my passion and curiosity " .. companyGoal .. "."
 
 
 	p2 = "During my junior year, I began taking upper-division courses that were directly applicable to solving real engineering hurdles to create tangible pieces of software and hardware. My passion for solving technical problems is reflected in these last two years, in which I maintained a \\textbf{3.75/4.00 GPA}. Many of the courses I have taken establish my engineering technical proficiency, and are directly applicable to a firmware engineering role at " ..  colloqCompanyName .. ". Furthermore, I believe this GPA to be indicative of the quality of work I intend on bringing to this company."
@@ -13,9 +13,8 @@ function getBodyPargs(role, profCompanyName, colloqCompanyName, companyGoal)
 end
 
 function inputRole() 
-	io.write("\nInput role (leave blank for generic version): \n" .. 
-		"\t \"interest in the <INSERT> role at ... \n" ..
-		">> ")
+	io.write("... interest in the <ROLE> role at ... \n" ..
+		"ROLE= ")
 	role = io.read("*l")
 	
 	-- handling optional case and fixing grammar.
@@ -31,65 +30,62 @@ end
 
 
 function inputCompanyGoal() 
-	io.write("\nCompany Goal (leave blank for generic version). \n" ..
-		"\t\"... contribute my passion and curiosity towards <insert>.\" \n" ..
-		">> ")
+	io.write("\n... contribute my passion and curiosity towards <COMPANY_GOAL>.\" \n" ..
+		"COMPANY_GOAL= ")
 	companyGoal = io.read("*l")
 
 	-- handling optional case and fixing grammar.
 	if companyGoal == "" then 
-		companyGoal = "towards " .. companyGoal
-	else 
 		companyGoal = "to this company"
+	else 
+		companyGoal = "towards " .. companyGoal
 	end
 
 	return companyGoal
 end
 
 function inputCompanyName()
-	io.write("\nProfessional Company Name: \n" ..
-		">> ")
-	profCompanyName = io.read("*l")
-	profCompanyName = string.gsub(profCompanyName, ".", "") -- Removing any periods (if there are any)
+	io.write("\nOFFICIAL_COMPANY_NAME= ")
+	officialCompanyName = io.read("*l")
+	officialCompanyName = string.gsub(officialCompanyName, "%.", "") -- Removing any periods (if there are any)
 
-	io.write("\nColloquial Company Name (leave blank to use professional company name: \n" ..
-		">> ")
+	io.write("\nCOLLOQUIAL_COMPANY_NAME= ")
 	colloqCompanyName = io.read("*l")
-	colloqCompanyName = string.gsub(colloqCompanyName, ".", "") -- Removing any periods (if there are any)
+	colloqCompanyName = string.gsub(colloqCompanyName, "%.", "") -- Removing any periods (if there are any)
 
-	if (colloqCompanyName == "" and profCompanyName == "") then
+	if (colloqCompanyName == "" and officialCompanyName == "") then
 		colloqCompanyName = "this company"
-		profCompanyName   = "this company"
+		officialCompanyName   = "this company"
 
-	elseif profCompanyName == "" then
-		profCompanyName = colloqCompanyName 
+	elseif officialCompanyName == "" then
+		officialCompanyName = colloqCompanyName 
 
 	elseif colloqCompanyName == "" then
-		colloqCompanyName = profCompanyName
+		colloqCompanyName = officialCompanyName
 
 	end
 
-	return profCompanyName, colloqCompanyName
+	return officialCompanyName, colloqCompanyName
 end
 
 function getTextInputs() 
 
 	role					= inputRole()
-	profCompanyName, colloqCompanyName 	= inputCompanyName()
+	officialCompanyName, colloqCompanyName 	= inputCompanyName()
 	companyGoal 				= inputCompanyGoal()
 	
-
-	return role, profCompanyName, colloqCompanyName, companyGoal
+	return role, officialCompanyName, colloqCompanyName, companyGoal
 
 end
 
 -- ACTUAL INTERFACE:
 function generateBodyText() 
-	role, profCompanyName, colloqCompanyName, companyGoal =  getTextInputs()
+	io.write("\n\nFill in the variables (leave as many blank as you want).\n\n");
 
-	p1, p2, p3 = getBodyPargs(role, profCompanyName, colloqCompanyName, companyGoal)
+	role, officialCompanyName, colloqCompanyName, companyGoal =  getTextInputs()
+
+	p1, p2, p3 = getBodyPargs(role, officialCompanyName, colloqCompanyName, companyGoal)
 
 	return p1, p2, p3 
-
 end
 

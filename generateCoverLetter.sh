@@ -16,6 +16,6 @@ if [ "$1" = "-m" ]
 then
 	echo "Muted Output"
 else
-	clear
 	google-chrome-stable ${BUILD_DIR}/${FILE_BASENAME}.pdf
+	clear
 fi
